@@ -15,11 +15,11 @@ app.prepare()
       if (err) throw err;
       console.log('> Ready on http://localhost:3000');
     })
-  .catch((ex) => {
-    console.error(ex.stack);
-    process.exit(1);
-  })
-})
+      .catch((ex) => {
+        console.error(ex.stack);
+        process.exit(1);
+      });
+  });
 // // Define rendering engine + static directory
 // app.engine('handlebars', handlebars());
 // app.set('view engine', 'handlebars');
