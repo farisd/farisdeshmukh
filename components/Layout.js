@@ -19,30 +19,46 @@ const Layout = (props) => {
       </Head>
       <div className="app">
         <header>
-          <h1>
-            <Link href={{ pathname: '/' }}>
-              <a href={{ pathname: '/' }}>Faris Deshmukh</a>
-            </Link>
-          </h1>
+          <div className="title">
+            <h1>
+              <Link href={{ pathname: '/' }}>
+                <a href={{ pathname: '/' }}>Faris Deshmukh</a>
+              </Link>
+            </h1>
+          </div>
         </header>
         <Sidebar links={sidebarLinks} width={sidebarWidth} />
         <main className="content">
           { children }
         </main>
       </div>
-      <style jsx>
+      <style jsx global>
         {`
       @import url('https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400,700');
+
+      body { 
+        background-color: #A7DBD8;
+        font-family: 11px 'Lato';
+      }
+    `}
+    </style>
+      <style jsx>
+        {`
+      
 
       * {
         font-family: 'Lato', sans-serif;
       }
 
+      html {
+        background-color: #A7DBD8;
+      }
+
       h1, a {
         color: black;
+        text-decoration: none;
       }
       h1 {
-        margin-left: ${sidebarWidth}px;
         font-family: 'Roboto';
         font-weight: 700;
       }
@@ -58,6 +74,15 @@ const Layout = (props) => {
         padding: 16px;
         background-color: #E0E4CC;
         height: fill-available;
+      }
+
+      .title {
+        margin-left: ${sidebarWidth}px;
+      }
+
+      .app {
+        max-width: 960px;
+        margin: auto;
       }
     `}
       </style>
