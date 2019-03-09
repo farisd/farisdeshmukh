@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import Sidebar from './Sidebar';
 
 const sidebarLinks = ['about', 'cv'];
+const sidebarWidth = 160;
+const headerHeight = 80;
 
 const Layout = (props) => {
   console.log('test');
@@ -23,33 +25,34 @@ const Layout = (props) => {
             </Link>
           </h1>
         </header>
-        <Sidebar links={sidebarLinks} />
-        { children }
-        <footer>
-          Footer
-        </footer>
+        <Sidebar links={sidebarLinks} width={sidebarWidth} />
+        <main className="content">
+          { children }
+        </main>
       </div>
-      <style global jsx>
-        {`
-              :root {
-                  --green:  #65C5D9; 
-                  --white: #F4F5F7;
-                  --light-gray: #EAEEEF;
-              }
-              ...
-              body{...}
-          `}
-
-      </style>
       <style jsx>
         {`
-              header{ ...}
-              header h1 a{ ...}
-              h2{....}
-              footer { ...}
-
-          `}
-
+      h1, a {
+        font-family: "Arial";
+        color: black;
+      }
+      h1 {
+        margin-left: ${sidebarWidth}px;
+      }
+      header {
+        background-color: #A7DBD8;
+        position: relative;
+        padding: 16px;
+        height: ${headerHeight}px;
+      }
+      main {
+        position: relative;
+        margin-left: ${sidebarWidth}px;
+        padding: 16px;
+        background-color: #E0E4CC;
+        height: 100%;
+      }
+    `}
       </style>
     </div>
   );
