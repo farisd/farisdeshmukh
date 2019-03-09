@@ -12,6 +12,8 @@ const Sidebar = (props) => {
     <div className="sidebar">
       <ul>
         {listSidebarElements}
+        <SidebarElement page="linkedIn" url="https://www.linkedin.com/in/faris-deshmukh/" />
+        <SidebarElement page="twitter" url="https://www.twitter.com/farisd" />
       </ul>
       <style jsx>
         {`
