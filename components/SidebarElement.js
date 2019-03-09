@@ -8,6 +8,13 @@ const SidebarElement = (props) => {
       <Link href={url}>
         <a href={url}>{page}</a>
       </Link>
+      <style jsx>
+        {`
+          div {
+            padding: 8px;
+          }
+        `}
+      </style>
     </div>
   );
 };
