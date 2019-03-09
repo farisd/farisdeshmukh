@@ -33,57 +33,55 @@ const Layout = (props) => {
       </div>
       <style jsx global>
         {`
-      @import url('https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400,700');
+          @import url('https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400,700');
 
-      body { 
-        background-color: #A7DBD8;
-        font-family: 11px 'Lato';
-      }
-    `}
-    </style>
+          body { 
+            background-color: #A7DBD8;
+            font-family: 11px 'Lato';
+          }
+        `}
+      </style>
       <style jsx>
         {`
-      
+          * {
+            font-family: 'Lato', sans-serif;
+          }
 
-      * {
-        font-family: 'Lato', sans-serif;
-      }
+          html {
+            background-color: #A7DBD8;
+          }
 
-      html {
-        background-color: #A7DBD8;
-      }
+          h1, a {
+            color: black;
+            text-decoration: none;
+          }
+          h1 {
+            font-family: 'Roboto';
+            font-weight: 700;
+          }
+          header {
+            background-color: #A7DBD8;
+            position: relative;
+            padding: 16px;
+            height: ${headerHeight}px;
+          }
+          main {
+            position: relative;
+            margin-left: ${sidebarWidth}px;
+            padding: 16px;
+            background-color: #E0E4CC;
+            height: fill-available;
+          }
 
-      h1, a {
-        color: black;
-        text-decoration: none;
-      }
-      h1 {
-        font-family: 'Roboto';
-        font-weight: 700;
-      }
-      header {
-        background-color: #A7DBD8;
-        position: relative;
-        padding: 16px;
-        height: ${headerHeight}px;
-      }
-      main {
-        position: relative;
-        margin-left: ${sidebarWidth}px;
-        padding: 16px;
-        background-color: #E0E4CC;
-        height: fill-available;
-      }
+          .title {
+            margin-left: ${sidebarWidth}px;
+          }
 
-      .title {
-        margin-left: ${sidebarWidth}px;
-      }
-
-      .app {
-        max-width: 960px;
-        margin: auto;
-      }
-    `}
+          .app {
+            max-width: 960px;
+            margin: auto;
+          }
+      `}
       </style>
     </div>
   );
