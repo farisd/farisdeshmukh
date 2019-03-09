@@ -8,7 +8,6 @@ const sidebarWidth = 160;
 const headerHeight = 80;
 
 const Layout = (props) => {
-  console.log('test');
   const { children } = props;
   return (
     <div>
