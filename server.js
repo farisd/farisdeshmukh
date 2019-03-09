@@ -9,8 +9,10 @@ const port = process.env.PORT ? process.env.PORT : 3000;
 app.prepare().then(() => {
   const server = express();
 
+  server.use('/favicon.ico', express.static('public/favicon.ico'));
+
   server.get('*', (req, res) => {
-    return handle(req, res);
+    handle(req, res);
   });
 
   server.listen(port, (err) => {
