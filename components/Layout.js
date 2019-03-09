@@ -1,6 +1,9 @@
 import Link from 'next/link';
 import Head from 'next/head';
 import PropTypes from 'prop-types';
+import Sidebar from './Sidebar';
+
+const sidebarLinks = ['about', 'cv'];
 
 const Layout = (props) => {
   console.log('test');
@@ -20,6 +23,7 @@ const Layout = (props) => {
             </Link>
           </h1>
         </header>
+        <Sidebar links={sidebarLinks} />
         { children }
         <footer>
           Footer
