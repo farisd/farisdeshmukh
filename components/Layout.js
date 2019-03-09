@@ -32,12 +32,19 @@ const Layout = (props) => {
       </div>
       <style jsx>
         {`
+      @import url('https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400,700');
+
+      * {
+        font-family: 'Lato', sans-serif;
+      }
+
       h1, a {
-        font-family: "Arial";
         color: black;
       }
       h1 {
         margin-left: ${sidebarWidth}px;
+        font-family: 'Roboto';
+        font-weight: 700;
       }
       header {
         background-color: #A7DBD8;
