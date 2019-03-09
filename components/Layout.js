@@ -57,7 +57,7 @@ const Layout = (props) => {
         margin-left: ${sidebarWidth}px;
         padding: 16px;
         background-color: #E0E4CC;
-        height: 100%;
+        height: fill-available;
       }
     `}
       </style>

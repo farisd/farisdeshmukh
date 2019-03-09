@@ -21,7 +21,7 @@ const Sidebar = (props) => {
             height: 100%;
             background-color: #A7DBD8;
             width: ${width}px;
-            position: fixed;
+            position: absolute;
           }
 
           ul {
