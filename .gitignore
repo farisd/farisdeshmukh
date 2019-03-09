@@ -82,3 +82,7 @@ typings/
 
 # VSCode
 .vscode
+
+# gcp app engine files
+app.yaml
+.gcloudignore
