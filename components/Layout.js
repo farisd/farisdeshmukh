@@ -3,7 +3,33 @@ import Head from 'next/head';
 import PropTypes from 'prop-types';
 import Sidebar from './Sidebar';
 
-const sidebarLinks = ['about', 'cv'];
+const sidebarLinks = [
+  {
+    page: 'about',
+    url: '/about',
+    key: 1,
+  },
+  {
+    page: 'cv',
+    url: '/cv',
+    key: 2,
+  },
+  {
+    page: 'linkedin',
+    url: 'https://www.linkedin.com/in/faris-deshmukh/',
+    key: 3,
+  },
+  {
+    page: 'twitter',
+    url: 'https://www.twitter.com/farisd',
+    key: 4,
+  },
+  {
+    page: 'github',
+    url: 'https://www.github.com/farisd',
+    key: 5,
+  },
+];
 const sidebarWidth = 160;
 const headerHeight = 80;
 

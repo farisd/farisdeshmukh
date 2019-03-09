@@ -4,16 +4,14 @@ import SidebarElement from './SidebarElement';
 const Sidebar = (props) => {
   const { links, width } = props;
   const listSidebarElements = links.map(link => (
-    <li>
-      <SidebarElement page={link} url={`/${link}`} />
+    <li key={link.key}>
+      <SidebarElement page={link.page} url={link.url} />
     </li>
   ));
   return (
     <div className="sidebar">
       <ul>
         {listSidebarElements}
-        <SidebarElement page="linkedIn" url="https://www.linkedin.com/in/faris-deshmukh/" />
-        <SidebarElement page="twitter" url="https://www.twitter.com/farisd" />
       </ul>
       <style jsx>
         {`
@@ -34,7 +32,11 @@ const Sidebar = (props) => {
 };
 
 Sidebar.propTypes = {
-  links: PropTypes.arrayOf(PropTypes.string).isRequired,
+  links: PropTypes.arrayOf(PropTypes.shape({
+    page: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired,
+    key: PropTypes.number.isRequired,
+  })).isRequired,
   width: PropTypes.number,
 };
 
