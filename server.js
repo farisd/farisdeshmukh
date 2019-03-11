@@ -11,6 +11,10 @@ app.prepare().then(() => {
 
   server.use('/favicon.ico', express.static('public/favicon.ico'));
 
+  server.use('/robots.txt', (req, res) => {
+    res.sendFile(`${__dirname}/static/robots.txt`);
+  });
+
   server.get('*', (req, res) => {
     handle(req, res);
   });
