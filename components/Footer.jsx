@@ -10,7 +10,8 @@ const Footer = () => {
         `
         footer {
           padding: ${Config.paddingLarge};
-          border-top-style: solid;
+          margin: auto; 
+          margin-top: 8px;
         }
 
         p {
@@ -21,7 +22,6 @@ const Footer = () => {
           p {
             margin-left: 0;
           }
-        }
         `
         }
       </style>

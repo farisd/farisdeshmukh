@@ -17,7 +17,7 @@ const Sidebar = (props) => {
       <style jsx>
         {`
           .sidebar {
-            height: 100%;
+            height: 200px;
             background-color: ${Config.primaryColour};
             width: ${width};
             position: absolute;
