@@ -27,7 +27,7 @@ const Sidebar = (props) => {
             list-style-type: none;
           }
 
-          @media screen and (max-width: ${Breakpoints.mobile}px) {
+          @media screen and (max-width: ${Breakpoints.mobile}) {
             .sidebar {
               width: 100%;
               height: auto;
