@@ -19,7 +19,7 @@ const Sidebar = (props) => {
           .sidebar {
             height: 100%;
             background-color: ${Config.primaryColour};
-            width: ${width}px;
+            width: ${width};
             position: absolute;
           }
 
@@ -33,7 +33,7 @@ const Sidebar = (props) => {
               height: auto;
               position: relative;
               display: flex;
-              padding: 8px;
+              padding: ${Config.paddingSmall};
             }
             ul {
               padding: 0;
@@ -54,7 +54,7 @@ Sidebar.propTypes = {
     url: PropTypes.string.isRequired,
     key: PropTypes.number.isRequired,
   })).isRequired,
-  width: PropTypes.number,
+  width: PropTypes.string,
 };
 
 Sidebar.defaultProps = {

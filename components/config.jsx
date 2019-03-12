@@ -1,15 +1,18 @@
 export const Config = {
-  sidebarWidth: 160,
-  headerHeight: 80,
+  sidebarWidth: '160px',
+  headerHeight: '80px',
   h1FontFamily: 'Lato',
   h1FontWeight: 700,
   defaultFontFamily: 'Lato',
+  defaultFontWeight: 400,
   primaryColour: '#A7DBD8',
   secondaryColour: '#E0E4CC',
+  paddingLarge: '16px',
+  paddingSmall: '8px',
 };
 
 export const Breakpoints = {
-  mobile: 700,
+  mobile: '700px',
 };
 
 export const sidebarLinks = [

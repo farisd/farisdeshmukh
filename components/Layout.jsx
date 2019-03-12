@@ -37,13 +37,13 @@ const Layout = (props) => {
           }
           main {
             position: relative;
-            margin-left: ${Config.sidebarWidth}px;
-            padding: 16px;
+            margin-left: ${Config.sidebarWidth};
+            padding: ${Config.paddingLarge};
             background-color: ${Config.secondaryColour};
             height: fill-available;
           }
           
-          @media screen and (max-width: ${Breakpoints.mobile}px) {
+          @media screen and (max-width: ${Breakpoints.mobile}) {
             .title {
               margin-left: 0;
             }

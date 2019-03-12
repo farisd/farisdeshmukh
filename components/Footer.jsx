@@ -9,15 +9,15 @@ const Footer = () => {
         {
         `
         footer {
-          padding: 16px;
+          padding: ${Config.paddingLarge};
           border-top-style: solid;
         }
 
         p {
-          margin-left: ${Config.sidebarWidth}px;
+          margin-left: ${Config.sidebarWidth};
         }
 
-        @media screen and (max-width: ${Breakpoints.mobile}px) {
+        @media screen and (max-width: ${Breakpoints.mobile}) {
           p {
             margin-left: 0;
           }

@@ -29,13 +29,13 @@ const Header = (props) => {
       header {
         background-color: ${Config.primaryColour};
         position: relative;
-        padding: 16px;
-        height: ${Config.headerHeight}px;
+        padding: ${Config.paddingLarge};
+        height: ${Config.headerHeight};
       }
       .title {
-        margin-left: ${Config.sidebarWidth}px;
+        margin-left: ${Config.sidebarWidth};
       }
-      @media screen and (max-width: ${Breakpoints.mobile}px) {
+      @media screen and (max-width: ${Breakpoints.mobile}) {
         .title {
           margin-left: 0;
         }

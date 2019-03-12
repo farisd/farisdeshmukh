@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import PropTypes from 'prop-types';
+import { Config } from './config';
 
 const SidebarElement = (props) => {
   const { page, url } = props;
@@ -11,7 +12,7 @@ const SidebarElement = (props) => {
       <style jsx>
         {`
           div {
-            padding: 8px;
+            padding: ${Config.paddingSmall};
           }
         `}
       </style>
