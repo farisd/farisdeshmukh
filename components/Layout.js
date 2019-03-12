@@ -2,36 +2,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 import PropTypes from 'prop-types';
 import Sidebar from './Sidebar';
-
-const sidebarLinks = [
-  {
-    page: 'about',
-    url: '/about',
-    key: 1,
-  },
-  {
-    page: 'cv',
-    url: '/cv',
-    key: 2,
-  },
-  {
-    page: 'linkedin',
-    url: 'https://www.linkedin.com/in/faris-deshmukh/',
-    key: 3,
-  },
-  {
-    page: 'twitter',
-    url: 'https://www.twitter.com/farisd',
-    key: 4,
-  },
-  {
-    page: 'github',
-    url: 'https://www.github.com/farisd',
-    key: 5,
-  },
-];
-const sidebarWidth = 160;
-const headerHeight = 80;
+import { Config, Breakpoints, sidebarLinks } from './config';
 
 const Layout = (props) => {
   const { children } = props;
@@ -53,7 +24,7 @@ const Layout = (props) => {
             </h1>
           </div>
         </header>
-        <Sidebar links={sidebarLinks} width={sidebarWidth} />
+        <Sidebar links={sidebarLinks} width={Config.sidebarWidth} />
         <main className="content">
           { children }
         </main>
@@ -90,18 +61,26 @@ const Layout = (props) => {
             background-color: #A7DBD8;
             position: relative;
             padding: 16px;
-            height: ${headerHeight}px;
+            height: ${Config.headerHeight}px;
           }
           main {
             position: relative;
-            margin-left: ${sidebarWidth}px;
+            margin-left: ${Config.sidebarWidth}px;
             padding: 16px;
             background-color: #E0E4CC;
             height: fill-available;
           }
 
           .title {
-            margin-left: ${sidebarWidth}px;
+            margin-left: ${Config.sidebarWidth}px;
+          }
+          @media screen and (max-width: ${Breakpoints.mobile}px) {
+            .title {
+              margin-left: 0;
+            }
+            main {
+              margin-left: 0;
+            }
           }
 
           .app {
