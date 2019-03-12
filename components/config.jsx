@@ -53,6 +53,10 @@ export const GlobalStyles = () => (
           font-family: 11px ${Config.defaultFontFamily};
         }
 
+        a {
+          color: black;
+        }
+
         a:visited {
           color: black;
         }
