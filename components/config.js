@@ -4,6 +4,8 @@ export const Config = {
   h1FontFamily: 'Lato',
   h1FontWeight: 700,
   defaultFontFamily: 'Lato',
+  primaryColour: '#A7DBD8',
+  secondaryColour: '#E0E4CC',
 };
 
 export const Breakpoints = {
@@ -37,3 +39,20 @@ export const sidebarLinks = [
     key: 5,
   },
 ];
+
+export const GlobalStyles = () => (
+  <style jsx global>
+    {`
+        @import url('https://fonts.googleapis.com/css?family=${Config.defaultFontFamily}:400,700');
+
+        body { 
+          background-color: ${Config.primaryColour};
+          font-family: 11px ${Config.defaultFontFamily};
+        }
+
+        a:visited {
+          color: black;
+        }
+      `}
+  </style>
+);

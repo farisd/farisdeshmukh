@@ -27,7 +27,7 @@ const Header = (props) => {
       }
 
       header {
-        background-color: #A7DBD8;
+        background-color: ${Config.primaryColour};
         position: relative;
         padding: 16px;
         height: ${Config.headerHeight}px;

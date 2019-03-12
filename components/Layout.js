@@ -2,7 +2,9 @@ import Head from 'next/head';
 import PropTypes from 'prop-types';
 import Sidebar from './Sidebar';
 import Header from './Header';
-import { Config, Breakpoints, sidebarLinks } from './config';
+import {
+  Config, Breakpoints, GlobalStyles, sidebarLinks,
+} from './config';
 
 const Layout = (props) => {
   const { children } = props;
@@ -21,16 +23,7 @@ const Layout = (props) => {
           { children }
         </main>
       </div>
-      <style jsx global>
-        {`
-          @import url('https://fonts.googleapis.com/css?family=${Config.defaultFontFamily}:400,700');
-
-          body { 
-            background-color: #A7DBD8;
-            font-family: 11px ${Config.defaultFontFamily};
-          }
-        `}
-      </style>
+      <GlobalStyles />
       <style jsx>
         {`
           * {
@@ -38,13 +31,13 @@ const Layout = (props) => {
           }
 
           html {
-            background-color: #A7DBD8;
+            background-color: ${Config.secondaryColour};
           }
           main {
             position: relative;
             margin-left: ${Config.sidebarWidth}px;
             padding: 16px;
-            background-color: #E0E4CC;
+            background-color: ${Config.secondaryColour};
             height: fill-available;
           }
           
