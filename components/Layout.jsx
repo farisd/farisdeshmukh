@@ -40,7 +40,8 @@ const Layout = (props) => {
             margin-left: ${Config.sidebarWidth};
             padding: ${Config.paddingLarge};
             background-color: ${Config.secondaryColour};
-            height: fill-available;
+            height: auto;
+            min-height: 500px;
           }
           
           @media screen and (max-width: ${Breakpoints.mobile}) {
@@ -53,7 +54,7 @@ const Layout = (props) => {
           }
 
           .app {
-            max-width: 960px;
+            max-width: 900px;
             margin: auto;
           }
       `}
