@@ -1,2 +1,2 @@
 # farisdeshmukh
-Simple app running [farisdeshmukh.com](www.farisdeshmukh.com), using NextJS and express
+Simple app running [farisdeshmukh.com](https://www.farisdeshmukh.com), using NextJS and express
