@@ -2,6 +2,7 @@ import Head from 'next/head';
 import PropTypes from 'prop-types';
 import Sidebar from './Sidebar';
 import Header from './Header';
+import Footer from './Footer';
 import {
   Config, Breakpoints, GlobalStyles, sidebarLinks,
 } from './config';
@@ -22,6 +23,7 @@ const Layout = (props) => {
         <main className="content">
           { children }
         </main>
+        <Footer />
       </div>
       <GlobalStyles />
       <style jsx>
