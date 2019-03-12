@@ -1,6 +1,9 @@
 export const Config = {
   sidebarWidth: 160,
   headerHeight: 80,
+  h1FontFamily: 'Lato',
+  h1FontWeight: 700,
+  defaultFontFamily: 'Lato',
 };
 
 export const Breakpoints = {

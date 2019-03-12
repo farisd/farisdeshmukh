@@ -1,7 +1,7 @@
-import Link from 'next/link';
 import Head from 'next/head';
 import PropTypes from 'prop-types';
 import Sidebar from './Sidebar';
+import Header from './Header';
 import { Config, Breakpoints, sidebarLinks } from './config';
 
 const Layout = (props) => {
@@ -15,15 +15,7 @@ const Layout = (props) => {
         <meta name="description" content="Faris Deshmukh's website" />
       </Head>
       <div className="app">
-        <header>
-          <div className="title">
-            <h1>
-              <Link href={{ pathname: '/' }}>
-                <a href={{ pathname: '/' }}>Faris Deshmukh</a>
-              </Link>
-            </h1>
-          </div>
-        </header>
+        <Header title="Faris Deshmukh" />
         <Sidebar links={sidebarLinks} width={Config.sidebarWidth} />
         <main className="content">
           { children }
@@ -31,37 +23,22 @@ const Layout = (props) => {
       </div>
       <style jsx global>
         {`
-          @import url('https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400,700');
+          @import url('https://fonts.googleapis.com/css?family=${Config.defaultFontFamily}:400,700');
 
           body { 
             background-color: #A7DBD8;
-            font-family: 11px 'Lato';
+            font-family: 11px ${Config.defaultFontFamily};
           }
         `}
       </style>
       <style jsx>
         {`
           * {
-            font-family: 'Lato', sans-serif;
+            font-family: ${Config.defaultFontFamily}, sans-serif;
           }
 
           html {
             background-color: #A7DBD8;
-          }
-
-          h1, a {
-            color: black;
-            text-decoration: none;
-          }
-          h1 {
-            font-family: 'Roboto';
-            font-weight: 700;
-          }
-          header {
-            background-color: #A7DBD8;
-            position: relative;
-            padding: 16px;
-            height: ${Config.headerHeight}px;
           }
           main {
             position: relative;
@@ -70,10 +47,7 @@ const Layout = (props) => {
             background-color: #E0E4CC;
             height: fill-available;
           }
-
-          .title {
-            margin-left: ${Config.sidebarWidth}px;
-          }
+          
           @media screen and (max-width: ${Breakpoints.mobile}px) {
             .title {
               margin-left: 0;
