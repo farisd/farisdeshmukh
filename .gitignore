@@ -86,3 +86,4 @@ typings/
 # gcp app engine files
 app.yaml
 .gcloudignore
+.DS_Store
