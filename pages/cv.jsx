@@ -30,13 +30,23 @@ export default () => (
     <div className="body">
       <MarkdownContent markup={summaryCopy} />
       <MarkdownContent markup={mercariCopy} />
-      <img src="https://storage.googleapis.com/farisdeshmukh-com/images/mercari_old.png" height="500" alt="mercari homepage from 2017" />
-      <video width="300" height="500" muted controls>
+      <img className="halfImage" src="https://storage.googleapis.com/farisdeshmukh-com/images/mercari_old.png" height="500" alt="mercari homepage from 2017" />
+      <video className="halfImage" width="300" height="500" muted controls>
         <source src="https://storage.googleapis.com/farisdeshmukh-com/videos/mercari_new.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <MarkdownContent markup={onefinestayCopy} />
-      <img src="https://storage.googleapis.com/farisdeshmukh-com/images/onefinestay.png" width="500" alt="onefinestay homepage" />
+      <img className="fullImage"  src="https://storage.googleapis.com/farisdeshmukh-com/images/onefinestay.png" alt="onefinestay homepage" />
     </div>
+    <style jsx>
+      {
+      `
+      .fullImage {
+        max-width: 100%;
+        width: 600px;
+      }
+    `
+      }
+    </style>
   </Layout>
 );
