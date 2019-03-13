@@ -92,5 +92,5 @@ app.yaml
 app-env
 
 #images and videos
-static/images/
-static/videos/
+static/images
+static/videos
