@@ -87,3 +87,6 @@ typings/
 app.yaml
 .gcloudignore
 .DS_Store
+
+#environment variables
+app-env
