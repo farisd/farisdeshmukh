@@ -2,7 +2,7 @@ import MarkdownContent from '../components/markdownContent';
 import Layout from '../components/Layout';
 
 const summaryCopy = `
-  ## Things i have (helped) make
+  ## Things i have helped to make
 `;
 
 const mercariCopy = `
