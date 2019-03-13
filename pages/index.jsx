@@ -1,10 +1,18 @@
 import Layout from '../components/Layout';
+import MarkdownContent from '../components/markdownContent';
+
+const homePageCopy = `
+  Product manager. Ex onefinestay, Mercari. Soon to be Starling.
+  
+  This website is mostly to teach myself a little React. The code is on my github.
+
+  Excited by this website and want to be my friend? Email me on farisdeshmukh [at] gmail [dot] com
+`;
 
 export default () => (
   <Layout>
     <div className="body">
-      <p>Product manager. Ex onefinestay, Mercari. Soon to be Starling.</p>
-      <p>This website is mostly to teach myself a little React. The code is on my github.</p>
+      <MarkdownContent markup={homePageCopy} />
     </div>
   </Layout>
 );
