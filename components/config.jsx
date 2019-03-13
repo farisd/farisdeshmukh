@@ -17,29 +17,24 @@ export const Breakpoints = {
 
 export const sidebarLinks = [
   {
-    page: 'about',
-    url: '/about',
-    key: 1,
-  },
-  {
     page: 'cv',
     url: '/cv',
-    key: 2,
+    key: 1,
   },
   {
     page: 'linkedin',
     url: 'https://www.linkedin.com/in/faris-deshmukh/',
-    key: 3,
+    key: 2,
   },
   {
     page: 'twitter',
     url: 'https://www.twitter.com/farisd',
-    key: 4,
+    key: 3,
   },
   {
     page: 'github',
     url: 'https://www.github.com/farisd',
-    key: 5,
+    key: 4,
   },
 ];
 
