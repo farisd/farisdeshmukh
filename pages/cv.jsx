@@ -30,13 +30,13 @@ export default () => (
     <div className="body">
       <MarkdownContent markup={summaryCopy} />
       <MarkdownContent markup={mercariCopy} />
-      <img src={`${process.env.PUBLIC_URL}/images/mercari_old.png`} height="500" alt="mercari homepage from 2017" />
+      <img src="https://storage.googleapis.com/farisdeshmukh-com/images/mercari_old.png" height="500" alt="mercari homepage from 2017" />
       <video width="300" height="500" muted controls>
-        <source src={`${process.env.PUBLIC_URL}/videos/mercari_new.mp4`} type="video/mp4" />
+        <source src="https://storage.googleapis.com/farisdeshmukh-com/videos/mercari_new.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <MarkdownContent markup={onefinestayCopy} />
-      <img src={`${process.env.PUBLIC_URL}/images/onefinestay.png`} width="500" alt="onefinestay homepage" />
+      <img src="https://storage.googleapis.com/farisdeshmukh-com/images/onefinestay.png" width="500" alt="onefinestay homepage" />
     </div>
   </Layout>
 );
