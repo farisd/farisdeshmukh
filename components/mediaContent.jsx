@@ -17,6 +17,7 @@ const styles = (
     .halfVideo {
       max-width: 100%;
       width: 300px;
+      max-height: 533.33px;
     }
     `
     }
@@ -36,11 +37,13 @@ const MediaContent = (props) => {
     );
   } if (type === 'video') {
     return (
-      <video className={`${size}Video`} height="500" muted controls>
-        <source src={location} type="video/mp4" />
-        Your browser does not support the video tag.
+      <div>
+        <video className={`${size}Video`} muted controls>
+          <source src={location} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         {styles}
-      </video>
+      </div>
     );
   }
   throw Error;
