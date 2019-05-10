@@ -13,16 +13,16 @@ const mercariCopy = `
 
   In 2018, we adapted Mercari for the UK market by moving from a generalist marketplace to something specifically focussed towards young 18-25 year old women.
   
-  Here's a before (left) and after (right) of my time there:
+  Here's a before and after of my time there:
 `;
 
 const onefinestayCopy = `
   ### onefinestay, 2012-18
-  onefinestay is a premium holiday-rental site, with some of the world's most beautiful homes. During my time there it grew from one market (London) to hundreds.
+  onefinestay is a premium holiday-rental site, with some of the world's most beautiful homes. I joined at Series A and left post-exit.
 
-  Since early 2017 I product managed the website.
+  Since early 2017 I product managed the website. I transitioned the website from displaying 6 markets and low 1000s of homes, to 100s of markets across the world with 10,000+ homes, reworking the search and discovery experience.
 
-  Website development effectively stopped since i left  🤷‍♂️, so [check it out](https://www.onefinestay.com) in all its 2018 glory!
+  Website development effectively stopped since I left  🤷‍♂️, so [check it out](https://www.onefinestay.com) in all its January 2018 glory!
 `;
 
 export default () => (
