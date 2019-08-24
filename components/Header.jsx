@@ -8,8 +8,8 @@ const Header = (props) => {
     <header>
       <div className="title">
         <h1>
-          <Link href={{ pathname: '/' }}>
-            <a href={{ pathname: '/' }}>{title}</a>
+          <Link href={ '/' }>
+            <a href={ '/' }>{title}</a>
           </Link>
         </h1>
       </div>
