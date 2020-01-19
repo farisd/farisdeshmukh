@@ -2,7 +2,7 @@ import Layout from '../components/Layout';
 import MarkdownContent from '../components/markdownContent';
 
 const homePageCopy = `
-  Product manager. Ex onefinestay, Mercari. Now Starling.
+  Product manager. Ex onefinestay, Mercari, Starling. Now [Shpock](https://apps.apple.com/gb/app/shpock-buy-sell-shopping/id557153158).
   
   This website is mostly to teach myself a little React. The code is on my github.
 
